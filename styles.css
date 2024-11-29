@@ -1,0 +1,88 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /* overflow: hidden; */
+}
+
+#three-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* ---------------------------------------------------加載start */
+
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  z-index: 1000;
+
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
+}
+
+#loading-screen.disappear {
+  opacity: 0; /* 隱藏時透明度設為0 */
+  pointer-events: none; /* 禁止鼠標事件 */
+}
+
+/* ---------------------------------------------------加載end */
+
+/* ---------------------------------------------------操作提示樣式 */
+
+#mouse-instruction {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  display: none;
+}
+
+#action-icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+#mouse-instruction.visible,
+#action-icon.visible {
+  display: block;
+}
+
+/* ---------------------------------------------------操作提示樣式 */
+
+/* 相機位置start */
+/* #position-display {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: black;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  z-index: 10;
+} */
+/* 相機位置end */
