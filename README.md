@@ -10,7 +10,6 @@
     ```bash
    npm run start
 
-
 ## 操作說明
 
 滑鼠右鍵：平移畫面  
