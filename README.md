@@ -2,10 +2,11 @@
 
 1. 安裝依賴：
    
+   在 VSCode 終端機中執行
    ```bash
    npm install
    
-2. 啟動專案
+3. 啟動專案
 
     ```bash
    npm run start
